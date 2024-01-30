@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Documentaire - Mariage Forcés des Mineures</title>
+    <style>
+        body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: transform 0.5s; /* Ajoute une transition pour la propriété transform */
+}
+
+body.shift-right {
+    transform: translateX(-100%); /* Déplace le contenu de la page vers la gauche (masque la page actuelle) */
+}
+
+body.shift-left {
+    transform: translateX(100%); /* Déplace le contenu de la page vers la droite (masque la page actuelle) */
+}
+
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.h3 {
+    margin-left: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+div {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    div {
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
+
+/* Style the header */
+head {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the quiz section */
+h3:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 10px 0;
+}
+
+/* Style links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.boutton1, .boutton2 {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 24px;
+}
+.boutton1 {
+    margin-left: 920px;
+
+}
+
+.boutton1:hover , .boutton2:hover {
+    background-color: #2980b9;
+}
+
+.boutton1:active, .boutton2:active {
+    background-color: #216a94;
+}
+
+
+    </style>
+</head>
+<body>
+    <h2>Note d'Intention</h2>
+    <h3 class="h3">Sujet du web-documentaire : Mariages Forcés des Mineures</h3>
+    <h3 class="h3">Auteur : Othmane Houasli</h3>
+
+    <div>
+        <h3>Objectif :</h3>
+        <div>L'objectif de ce web-documentaire est de sensibiliser le public au mariage forcé des mineures, une problématique touchant des millions de filles dans le monde et constituant une violation flagrante des droits de l'enfant.</div>
+    </div>
+
+    <div>
+        <h3>Public cible :</h3>
+        <div>Le web-documentaire s'adresse à un public large, notamment les jeunes adultes, les parents et les professionnels de l'éducation, car il est crucial d'informer et de mobiliser divers segments de la société pour lutter contre cette réalité tragique.</div>
+    </div>
+
+    <div>
+        <h3>Approche :</h3>
+        <div>Notre approche repose sur une combinaison d'informations factuelles et de témoignages authentiques. Les témoignages permettront de personnaliser cette problématique, donnant une voix directe aux victimes et sensibilisant le public de manière émotionnelle et empathique.</div>
+    </div>
+
+    <div>
+        <h3>Médias :</h3>
+        <div>Le web-documentaire débutera par une vidéo visant à introduire le sujet de manière percutante et à susciter l'intérêt du public. Cette vidéo comprendra des séquences et des sons illustrant le mariage forcé des mineures au Maroc, mettant en lumière son ampleur, ses causes et ses conséquences.</div>
+        <div>Le web-documentaire comprendra des graphiques illustrant des informations générales sur cette thématique, suivis de reportages présentant des témoignages poignants de filles ayant vécu cette réalité, offrant ainsi une perspective humaine sur le phénomène.</div>
+    </div>
+
+    <div>
+        <h3>Type de traitement :</h3>
+        <div>Le web-documentaire adopte une approche documentaire, cherchant à informer de manière objective tout en suscitant une prise de conscience. La rigueur documentaire est essentielle pour garantir la crédibilité du contenu et encourager une réflexion informée chez le public.</div>
+    </div>
+
+    <div>
+        <h3>Quiz :</h3>
+        <div>La décision d'inclure un quiz à la fin du web-documentaire vise à encourager l'interaction et l'engagement du public. Ce quiz fournira une opportunité aux visiteurs de consolider leurs connaissances sur le mariage forcé des mineures de manière interactive. Cela permettra également de renforcer le message éducatif du web-documentaire, incitant le public à approfondir sa compréhension de la thématique.</div>
+    </div>
+    <button class="boutton2" onclick="transitionToContenu4()"> &#129044; </button>
+    <button class="boutton1" onclick="transitionToIndex()"> Revoir le web-documentaire</button>
+    <script>
+                function transitionToContenu4() {
+            document.body.classList.add('shift-left'); // Ajoute la classe pour déclencher l'effet de transition
+            setTimeout(function () {
+                window.location.href = 'quiz.html'; // Redirige vers la page d'accueil après la transition
+            }, 500); // Le délai doit correspondre à la durée de la transition définie dans le CSS
+        }
+
+                function transitionToIndex() {
+            document.body.classList.add('shift-left'); // Ajoute la classe pour déclencher l'effet de transition
+            setTimeout(function () {
+                window.location.href = '../index.html'; // Redirige vers la page d'accueil après la transition
+            }, 500); // Le délai doit correspondre à la durée de la transition définie dans le CSS
+        }
+    </script>
+</body>
+</html>

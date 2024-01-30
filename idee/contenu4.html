@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: transform 0.5s; /* Ajoute une transition pour la propriété transform */
+}
+
+body.shift-right {
+    transform: translateX(-100%); /* Déplace le contenu de la page vers la gauche (masque la page actuelle) */
+}
+
+body.shift-left {
+    transform: translateX(100%); /* Déplace le contenu de la page vers la droite (masque la page actuelle) */
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.contenu1 {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.special {
+    font-weight: bold;
+    background-color: rgb(45, 138, 245);
+    padding: 14px;
+    border-radius: 15px;
+}
+
+
+ /* Styles communs pour les boutons */
+.boutton1,
+.boutton2 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boutton1:hover,
+.boutton2:hover {
+    background-color: #0056b3; /* Change la couleur au survol */
+}
+
+/* Place le bouton à droite */
+.boutton1 {
+    position: relative;
+    margin-left: 1150px;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Place le bouton à gauche */
+.boutton2 {
+    margin-top: 30px;
+
+    margin-left: 60px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.inv1, .inv2, .inv3, .inv4, .inv5, .inv6{
+    max-width: 400px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inv1 img, .inv2 img, .inv3 img, .inv4 img, .inv5 img, .inv6 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.inv1:hover img, .inv2:hover img, .inv3:hover img, .inv4:hover img, .inv5:hover img , .inv6:hover img{
+    transform: scale(1.1);
+}
+
+.inv1 h3, .inv2 h3, .inv3 h3, .inv4 h3, .inv5 h3, .inv6 h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.inv-special {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    padding-bottom: 120px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.inv1 a, .inv2 a, .inv3 a, .inv4 a, .inv5 a , .inv6 a{
+    display: block;
+    position: relative;
+}
+
+.inv1::before, .inv2::before, .inv3::before, .inv4::before, .inv5::before, .inv6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.inv1:hover::before, .inv2:hover::before, .inv3:hover::before, .inv4:hover::before, .inv5:hover::before, .inv6:hover::before {
+    opacity: 1;
+}
+    </style>
+    <title>Web Documentaire - Mariage Forcés des Mineures</title>
+</head>
+<body>
+    <h1>Témoignages</h1>
+    <div class="container">
+        <div class="inv1">
+            <a href="https://www.youtube.com/watch?v=q7afhhGqjiA" target="_blank"><img src="../medias/1.png" alt="1"></a>
+            <h3>Habiba - 14 ans</h3>
+        </div>
+        <div class="inv2">
+            <a href="https://www.youtube.com/watch?v=C1S72jAeN78" target="_blank"><img src="../medias/2.png" alt="1"></a>
+            <h3 class="inv-special">Sonjida - 15 ans</h3>
+        </div>
+        <div class="inv3">
+            <a href="https://www.youtube.com/watch?v=aRAvVQoH7D0" target="_blank"><img src="../medias/3.png" alt="1"></a>
+            <h3>Sunyta - 13 ans</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="inv4">
+            <a href="https://www.youtube.com/watch?v=werXXwXG8Lk" target="_blank"><img src="../medias/4.png" alt="1"></a>
+            <h3>Mariama - 13 ans</h3>
+        </div>
+        <div class="inv5">
+            <a href="https://www.youtube.com/watch?v=5TkcvtoBUbM" target="_blank"><img src="../medias/5.png" alt="1"></a>
+            <h3>Asmot Ara - 14 ans</h3>
+        </div>
+        <div class="inv6">
+            <a href="https://www.youtube.com/watch?v=E9o6TL-_meM" target="_blank"><img src="../medias/6.png" alt="1"></a>
+            <h3>Bantu Talks - 14 ans</h3>
+        </div>
+    </div>
+
+    <button class="boutton2" onclick="transitionToContenu3()"> &#129044; </button>
+    <button class="boutton1" onclick="transitionToContenu5()"> Passer un quiz </button>
+
+    <script>
+        function transitionToContenu3() {
+            document.body.classList.add('shift-left'); // Ajoute la classe pour déclencher l'effet de transition
+            setTimeout(function () {
+                window.location.href = 'contenu2.html'; // Redirige vers la page d'accueil après la transition
+            }, 500); // Le délai doit correspondre à la durée de la transition définie dans le CSS
+        }
+        
+        // Fonction pour la transition vers contenu2.html (similaire à celle précédente)
+        function transitionToContenu5() {
+            document.body.classList.add('shift-right');
+            setTimeout(function () {
+                window.location.href = 'quiz.html';
+            }, 500);
+        }
+    </script>
+</body>
+</html>

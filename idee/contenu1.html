@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web Documentaire - Mariage des Mineures</title>
+</head>
+<body>
+    <h1>Qu’est-ce que le mariage des enfants ?    </h1>
+    <div class="contenu1">
+        <p>Le mariage infantile désigne une union officialisée ou non entre 2 enfants de moins de 18 ans ou un adulte et un enfant de moins de 18 ans.
+        </p>
+        <p class="special">Malgré les normes internationales pour la protection et promotion des droits des enfants dans la Convention relative aux droits des enfants et la Convention de l’élimination de toute forme de discrimination à l’égard des femmes, cette pratique reste courante. Malgré la présence de lois l’interdisant presque partout dans le monde, les sanctions sont rares. Un accord parental permet de déroger à la règle dans certains pays, tandis que d’autres contournent la loi en choisissant de ne pas officialiser légalement l’union.</p>
+        <p>L’inégalité des sexes reste très présente dans le mariage des enfants. Le nombre d’unions impliquant de jeunes garçons représente le cinquième de celles impliquant des filles. Mariées avant l’âge de 18 ans, souvent de force et avec des hommes beaucoup plus âgés qu’elles, ces jeunes femmes sont contraintes de renoncer à leur adolescence.
+
+            Même si le mariage forcé d’enfants reste plus fréquent dans les pays où le niveau de vie et les revenus sont bas, les pays développés ne sont pas épargnés.</p>
+    </div>
+
+    <button class="boutton2" onclick="transitionToIndex()"> &#129044; </button>
+    <button class="boutton1" onclick="transitionToContenu2()"> &#129046; </button>
+
+    <script>
+        function transitionToIndex() {
+            document.body.classList.add('shift-left'); // Ajoute la classe pour déclencher l'effet de transition
+            setTimeout(function () {
+                window.location.href = '../index.html'; // Redirige vers la page d'accueil après la transition
+            }, 500); // Le délai doit correspondre à la durée de la transition définie dans le CSS
+        }
+        
+        // Fonction pour la transition vers contenu2.html (similaire à celle précédente)
+        function transitionToContenu2() {
+            document.body.classList.add('shift-right');
+            setTimeout(function () {
+                window.location.href = 'contenu2.html';
+            }, 500);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web Documentaire - Mariage des Mineures</title>
+</head>
+<body>
+    <h1>Le mariage infantile en quelques chiffres</h1>
+    <div class="graphs">
+        <div class="graph1">
+            <div class="infogram-embed" data-id="pourcentage-de-femmes-de-moins-de-24-ans-qui-ont-deja-au-moins-3-enfants" data-type="interactive" data-title="Pourcentage de femmes de moins de 24 ans qui ont déjà au moins 3 enfants"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/pourcentage-de-femmes-de-moins-de-24-ans-qui-ont-deja-au-moins-3-enfants" style="color:#989898!important;text-decoration:none!important;" target="_blank">Pourcentage de femmes de moins de 24 ans qui ont déjà au moins 3 enfants</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+        </div>
+        <div class="graph2">
+            <div class="infogram-embed" data-id="pourcentages-de-femmes-mariees-avant-18-ans" data-type="interactive" data-title="Pourcentages de femmes mariées avant 18 ans"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/pourcentages-de-femmes-mariees-avant-18-ans" style="color:#989898!important;text-decoration:none!important;" target="_blank">Pourcentages de femmes mariées avant 18 ans</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+        </div>
+        <div class="graph3">
+            <div class="infogram-embed" data-id="poucentages-de-femmes-mariees-avant-18-ans-par-niveau-deducation" data-type="interactive" data-title="Poucentages de femmes mariées avant 18 ans par niveau d&amp;#39;éducation"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/poucentages-de-femmes-mariees-avant-18-ans-par-niveau-deducation" style="color:#989898!important;text-decoration:none!important;" target="_blank">Poucentages de femmes mariées avant 18 ans par niveau d'éducation</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+        </div>
+    </div>
+    <button class="boutton2" onclick="transitionToContenu1()"><strong> &#129044; </strong></button>
+    <button class="boutton1" onclick="transitionToContenu3()"><strong> &#129046; </strong></button>
+    <script>
+        function transitionToContenu1() {
+            document.body.classList.add('shift-left'); // Ajoute la classe pour déclencher l'effet de transition
+            setTimeout(function () {
+                window.location.href = 'contenu1.html'; // Redirige vers la page d'accueil après la transition
+            }, 500); // Le délai doit correspondre à la durée de la transition définie dans le CSS
+        }
+        
+        // Fonction pour la transition vers contenu2.html (similaire à celle précédente)
+        function transitionToContenu3() {
+            document.body.classList.add('shift-right');
+            setTimeout(function () {
+                window.location.href = 'contenu4.html';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
